@@ -1,7 +1,7 @@
 # YeelightController
 Simple shell utility to discover and control Yeelight Wifi Smart bulb
 
-Please read the blog post for more details on this project.
+Please read the [blog post](https://shyamvalsan.com/blog/yeelightwifiraspberrypi/) for more details on this project.
 
 ## Install
 Just copy the files in this repo to your linux machine, the utilities used by the code
