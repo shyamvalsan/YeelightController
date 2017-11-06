@@ -9,7 +9,7 @@ are shell, awk, netcat, arp - all of which should be bundled with your OS.
 ## Run
  1. Plug in the yeelight smart bulb
  2. Turn on the light switch 
- 3. Run ./configure-light.sh 
+ 3. Run ./configure-light.sh (if you already know the IP address of your smart bulb then write it to ip.list and skip to step 5)
  4. Wait till light-configure exits, confirm that it ended successfully (If not, try repeating steps 2 and 3) 
  5. Run ./light.sh -h for options on how to control the bulb 
 ```
