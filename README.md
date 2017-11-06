@@ -25,6 +25,11 @@ where command can have one of the following values:
     notify-green - notification in green color
     notify-red - notification in red color
 ```
+## Demo
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=EqDKSsEf1HE
+" target="_blank"><img src="http://img.youtube.com/vi/EqDKSsEf1HE/0.jpg" 
+alt="Demo video of Yeelight smart light controller on Raspberry Pi" width="240" height="180" border="10" /></a>
+
 ## Enhancements 
  1. Update the colors file with color name and hex codes to use more colors
  2. Allow for control of multple smart bulbs in the same network   
