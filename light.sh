@@ -34,6 +34,16 @@ case $command in
 "notify-red")
  printf "{\"id\":1,\"method\":\"start_cf\",\"params\":[ 5, 0, \"100, 1, 16711680, 100, 100, 1, 16711680, 1\"]}\r\n" | nc -w1 $ip 55443
  ;;
+ "dim")
+ printf "{\"id\":1,\"method\":\"set_bright\",\"params\":[5]}\r\n" | nc -w1 $ip 55443
+ ;;
+"undim")
+ printf "{\"id\":1,\"method\":\"set_bright\",\"params\":[100]}\r\n" | nc -w1 $ip 55443
+ ;;
+"brightness")
+ level=$2
+ printf "{\"id\":1,\"method\":\"set_bright\",\"params\":[$level]}\r\n" | nc -w1 $ip 55443
+ ;;
 *)
  printf "
 light.sh [command] <color> -- utility to control Yeelight smart bulb over wifi
@@ -47,6 +57,9 @@ where command can have one of the following values:
     notify-blue - notification in blue color
     notify-green - notification in green color
     notify-red - notification in red color
+    dim - dim light to brightness 5
+    undim - reset light to brightness 100
+    brightness <level> - set the brightness to <level> where <level> is an integer from 1 (dimmest) to 100 (brightest)
 "
 ;;
 esac
